@@ -1,0 +1,107 @@
+# -------------------------------------------------------------------
+# Application Specific Files
+# -------------------------------------------------------------------
+
+# Laravel specific directories and files
+/vendor
+/storage/*.key
+# The public facing storage symlink, should be ignored
+/storage/app/public
+# Vite/Laravel hot reload file
+/public/hot
+# Symlink for public storage, should be ignored
+/public/storage
+# Laravel cached files (e.g., config, routes)
+/bootstrap/cache/*
+# Keep directory but ignore contents
+!bootstrap/cache/.gitignore
+
+# Node.js, Vite, and frontend build specific
+# Node.js dependencies
+/node_modules
+# Common Vite output directory (e.g., for `npm run build`)
+/dist
+# Your specified Vite output directory
+/public/build
+
+# Environment files
+.env
+.env.backup
+# Common for local environment overrides
+.env.*.local
+# Specific production .env, should be ignored
+.env.production
+
+# Composer specific
+# Composer authentication file (sensitive)
+/auth.json
+
+# Laravel debugging and testing
+/.phpunit.cache
+/.phpunit.result.cache
+# npm debug logs
+npm-debug.log
+# yarn error logs
+yarn-error.log
+# General log files
+*.log
+
+# Laravel storage cache/log/testing directories
+# Debugbar cache files
+/storage/debugbar
+# Clockwork cache files
+/storage/clockwork
+# Laravel Horizon cache files
+/storage/horizon
+# Laravel Pail (log tailing tool)
+/storage/pail
+# Laravel framework cache files only
+/storage/framework/cache/*
+!/storage/framework/cache/.gitignore
+# Laravel framework sessions files only
+/storage/framework/sessions/*
+!/storage/framework/sessions/.gitignore
+# Laravel framework compiled views files only
+/storage/framework/views/*
+!/storage/framework/views/.gitignore
+# Laravel testing framework cache files only
+/storage/framework/testing/*
+!/storage/framework/testing/.gitignore
+
+# -------------------------------------------------------------------
+# IDE and OS Specific Files
+# -------------------------------------------------------------------
+
+# IDE specific directories
+# JetBrains Fleet
+/.fleet
+# JetBrains IDEs (IntelliJ, PhpStorm, WebStorm)
+/.idea
+# Nova editor
+/.nova
+# VS Code settings
+/.vscode
+# Zed editor
+/.zed
+
+# PHP tooling specific
+# PHP tooling configuration
+.phpactor.json
+
+# OS specific files
+# macOS directory service store files
+.DS_Store
+# Windows thumbnail cache
+Thumbs.db
+
+# Laravel Homestead specific
+Homestead.json
+Homestead.yaml
+
+# -------------------------------------------------------------------
+# Exclusions/Exceptions
+# -------------------------------------------------------------------
+
+# Example: To track a specific file
+#!public/build/my-tracked-file.js
+#!vendor/autoload.php
